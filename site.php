@@ -21,16 +21,6 @@ $app->get('/', function() {
 
 });
 
-$app->get('/admin/users/:iduser', function($iduser){
-  User::verifyLogin();
-  $user = new User();
-  $user->get((int)$iduser);
-  $page = new PageAdmin();
-  $page ->setTpl("users-update", array(
-    "user"=>$user->getValues()
-  ));
-});
-
 $app->get("/categories/:idcategory", function($idcategory){
 
 	$page = (isset($_GET['page'])) ? (int)$_GET['page'] : 1;
