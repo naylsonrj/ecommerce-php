@@ -1,7 +1,7 @@
 <?php 
 
 namespace Hcode;
-
+include "library/Rain/Tpl.php";
 use Rain\Tpl;
 
 class Page {
@@ -63,12 +63,12 @@ class Page {
 
 
 	// include
-	include "library/Rain/Tpl.php";
+	
 	
 	// config
 	$config = array(
-					"tpl_dir"       => "templates/simple/",
-					"cache_dir"     => "cache/",
+					"tpl_dir"       => "../../../../views",
+					"cache_dir"     => "../../../../views-cache",
 					"debug"         => true // set to false to improve the speed
 				   );
 
