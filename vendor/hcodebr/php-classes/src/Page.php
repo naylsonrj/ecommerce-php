@@ -60,4 +60,22 @@ class Page {
 
 }
 
+
+
+	// include
+	include "library/Rain/Tpl.php";
+	
+	// config
+	$config = array(
+					"tpl_dir"       => "templates/simple/",
+					"cache_dir"     => "cache/",
+					"debug"         => true // set to false to improve the speed
+				   );
+
+	Tpl::configure( $config );
+
+	// Add PathReplace plugin (necessary to load the CSS with path replace)
+	require_once('library/Rain/Tpl/Plugin/PathReplace.php');
+	Rain\Tpl::registerPlugin( new Rain\Tpl\Plugin\PathReplace() );
+
  ?>
