@@ -5,7 +5,7 @@ namespace Hcode\DB;
 class Sql {
 
 	const HOSTNAME = "108.179.193.84";
-	const USERNAME = "styled36_adloja”";
+	const USERNAME = "styled36_adloja";
 	const PASSWORD = "Gva5zeLon@!h";
 	const DBNAME = "styled36_loja";
 
